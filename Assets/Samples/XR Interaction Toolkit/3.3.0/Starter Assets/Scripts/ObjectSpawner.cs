@@ -231,12 +231,13 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             var facePosition = m_CameraToFace.transform.position;
             var forward = facePosition - spawnPoint;
             BurstMathUtility.ProjectOnPlane(forward, spawnNormal, out var projectedForward);
-            newObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal);
+            var prefabRotation = newObject.transform.rotation;
+            newObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal) * prefabRotation;
 
             if (m_ApplyRandomAngleAtSpawn)
             {
                 var randomRotation = Random.Range(-m_SpawnAngleRange, m_SpawnAngleRange);
-                newObject.transform.Rotate(Vector3.up, randomRotation);
+                newObject.transform.Rotate(Vector3.up, randomRotation, Space.World);
             }
 
             if (m_SpawnVisualizationPrefab != null)

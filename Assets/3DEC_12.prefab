@@ -22,23 +22,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7372774
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.67559016
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalRotation.y
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -85
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -77,12 +77,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1014470241671031875}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3000000000000000001}
   m_SourcePrefab: {fileID: 100100000, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
---- !u!4 &1157925928921087868 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
-  m_PrefabInstance: {fileID: 1701091832042313879}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1970913985410524614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a433ed3b4f3f97541ad0debc340b8783, type: 3}
@@ -105,8 +103,8 @@ MonoBehaviour:
   m_PlaneClassificationsList: 
   m_PlaneClassifications: 0
   m_UseInteractorOrientation: 0
-  m_MinScale: 0.3
-  m_MaxScale: 2
+  m_MinScale: 2
+  m_MaxScale: 5
   m_ScaleSensitivity: 0.75
   m_Elasticity: 0.15
   m_EnableElasticBreakLimit: 1
@@ -212,7 +210,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 1157925928921087868}
+  m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
@@ -221,7 +219,7 @@ MonoBehaviour:
   m_ReinitializeDynamicAttachEverySingleGrab: 0
   m_AttachEaseInTime: 0.15
   m_MovementType: 2
-  m_PredictedVisualsTransform: {fileID: 2880306819126798719, guid: d825bbdf58c379d4290da92e387f71d0, type: 3}
+  m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
@@ -267,3 +265,15 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &3000000000000000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970913985410524614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00c4dbfc1ca829259d70896467b6cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
